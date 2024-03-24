@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rowspan Example</title>
+    </head>
+    <body>
+        <h1>Rowspan Example</h1>
+        <p>Here is an example of a table with rowspans grouping cities by country</p>
+        <table>
+            <caption>Cities of the World</caption>
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>City</th>
+                    <th>Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Single City, No Rowspan -->
+                <tr>
+                    <th>France</th>
+                    <td>Paris</td>
+                    <td>2,161,000</td>
+                </tr>
+                <!-- Two Cities, Rowspan=2 -->
+                <tr>
+                    <th rowspan="2">Japan</th>
+                    <td>Tokyo</td>
+                    <td>13,515,271</td>
+                </tr>
+                <tr>
+                    <td>Osaka</td>
+                    <td>2,752,024</td>
+                </tr>
+                <!-- Three Cities, Rowspan=3 -->
+                <tr>
+                    <th rowspan="3">USA</th>
+                    <td>New York City</td>
+                    <td>8,336,817</td>
+                </tr>
+                <tr>
+                    <td>Los Angeles</td>
+                    <td>3,979,576</td>
+                </tr>
+                <tr>
+                    <td>Chicago</td>
+                    <td>2,746,388</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
