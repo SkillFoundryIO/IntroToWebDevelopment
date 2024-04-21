@@ -13,5 +13,5 @@ At minimum, please add the following features:
 
 Feel free to use your own creative freedom and go further than these requirements. The goal here is to practice! Here is an example of a page that meets the minimum requirements:
 
-![](assets/03e-solution-image.png)
+![](assets/solution-render.png)
 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Combining CSS Selectors</title>
+    <style>
+        /* Descendant combinator */
+        .container p {
+            color: gray;
+        }
+
+        /* Child combinator */
+        .container > div {
+            font-size: 40px;
+        }
+
+        /* Adjacent sibling combinator */
+        .container + div {
+            background-color: lightblue;
+        }
+
+        /* Divs that are general siblings to the adjacent class div */
+        #adjacent ~ div {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>This paragraph is a descendant of a div with class 'container'.</p>
+        <div>This div is a child of a div with class 'container'.</div>
+    </div>
+    <div id="adjacent">This div is an adjacent sibling to the div with class 'container'.</div>
+    <div class="general-sibling">This div is a general sibling to the div with class 'container'.</div>
+    <div class="general-sibling">This second div is also a general sibling to the div with class 'container'.</div>
+</body>
+</html>

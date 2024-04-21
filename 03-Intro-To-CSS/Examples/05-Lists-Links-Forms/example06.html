@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>Styling Forms</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        button, 
+        input, 
+        select, 
+        textarea { 
+            font-family: inherit; 
+            font-size: 100%; 
+            box-sizing: border-box; 
+        } 
+
+        body {
+            width: 90%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <main>
+        <form>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="source">Referral Source</label>
+                <select id="source" name="source">
+                    <option>Google</option>
+                    <option>Bing</option>
+                    <option>Email Ad</option>
+                    <option>Mail Pamphlet</option>
+                    <option>Customer Referral</option>
+                </select>
+            </div>
+            <div>
+                <label for="newsletter">Subscribe to newsletter</label>
+                <input id="newsletter" name="newsletter" type="checkbox">
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form> 
+    </main>
+</body>

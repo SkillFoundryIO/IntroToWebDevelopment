@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Sizing</title>
+    <style>
+        main {
+            font-size: 1em;
+        }
+
+        main > p {
+            border: 1px solid black;
+        }
+
+        .absolute {
+            width: 150px;
+        }
+
+        .viewport {
+            width: 70vw;
+        }
+
+        .em {
+            font-size: 2.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Relative and Absolute units</h1>
+    </header>   
+    <main>
+        <p class="absolute">I am 150px wide</p>
+        <p class="viewport">I am 70vw wide</p>
+        <p class="em">I am 2.5em bigger than the main font size</p>
+    </main>
+</body>
+</html>

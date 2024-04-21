@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Border Styling Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            margin-bottom: 2em;
+            padding: 1em;
+        }
+        
+        /* Container for demonstration */
+        .container {
+            padding: 20px;
+        }
+        
+        /* Demonstrating shorthand border syntax */
+        .shorthand {
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+        
+        /* Demonstrating specific side properties */
+        .specific-sides {
+            border-top: 1px dashed blue;
+            border-bottom: 2px dotted red;
+            margin-bottom: 20px;
+        }
+        
+        /* Demonstrating various border styles */
+        .various-styles {
+            border-style: solid dashed dotted double;
+            border-width: 2px;
+            border-color: black green red blue;
+            margin-bottom: 20px;
+        }
+        
+        /* Demonstrating border radius */
+        .border-radius {
+            border: 2px solid purple;
+            border-radius: 15px;
+        }
+        
+        /* Additional examples with different border-radius values */
+        .border-radius-different {
+            border: 2px solid teal;
+            border-radius: 10px 20px 30px 40px; /* Different radius for each corner */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="shorthand">Shorthand Border</p>
+        <p class="specific-sides">Specific Sides Border</p>
+        <p class="various-styles">Various Border Styles</p>
+        <p class="border-radius">Border Radius</p>
+        <p class="border-radius-different">Different Border Radii</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navigation Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            list-style-type: none;
+            background-color: black;
+        }
+
+        nav ul li {
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

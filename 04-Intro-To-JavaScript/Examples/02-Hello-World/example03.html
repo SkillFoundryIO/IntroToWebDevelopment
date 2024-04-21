@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>JavaScript Inline Code</title>
+    </head>
+    <body>
+        <p>We put a script tag in the footer to grab the current year.</p>
+        <footer>
+            <p>
+                <script>
+                    const today = new Date();
+                    document.write("&copy;" + today.getFullYear());
+                </script>
+            </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            list-style-type: none;
+            background-color: black;
+        }
+
+        nav ul li {
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+        }
+
+        main aside {
+            flex-basis: 25%;
+            padding: 1em;
+        }
+
+        main article {
+            flex-basis: 50%;            
+            padding: 1em;
+        }
+
+        main p, li {
+            margin-bottom: 1em;
+        }
+
+        main article li {
+            list-style-position: inside;
+        }
+
+        main aside li {
+            list-style-type: none;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>   
+    <main>
+        <aside id="sidebar1">
+            <h2>Item Categories</h2>
+            <ul>
+                <li><a href="#">Desktops</a></li>
+                <li><a href="#">Laptops</a></li>
+                <li><a href="#">Monitors</a></li>
+                <li><a href="#">Office Furniture</a></li>
+                <li><a href="#">Cables</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>   
+        </aside>
+        <article>
+            <h2>Welcome to Crazy Joe's Tech Shack!</h2>
+            <p>We're here to service all of your tech and gadget needs with prices that are just CRAZY! From the latest in tech innovation to the everyday gadgets that make your life easier, we've got it all at unbeatable prices.</p>
+            
+            <h2>Why Shop With Us?</h2>
+            <ul>
+                <li><strong>Unbeatable Prices:</strong> With discounts up to 30% off, you won't find better deals anywhere else.</li>
+                <li><strong>Wide Selection:</strong> Whether you're looking for the latest smartphones, laptops, or home gadgets, we have a vast selection to choose from.</li>
+                <li><strong>Expert Advice:</strong> Our knowledgeable staff are here to help you find exactly what you need.</li>
+                <li><strong>Exclusive Deals:</strong> Sign up for our newsletter to receive special offers and exclusive discounts right to your inbox.</li>
+                <li><strong>Fast Shipping:</strong> Get your gadgets quickly with our expedited shipping options.</li>
+            </ul>
+            
+            <p>Don't miss out on our BIG SALE happening now! Save 30% off list prices on select items throughout the store. It's the perfect time to upgrade your tech or grab that gadget you've been eyeing at a fraction of the cost.</p>
+        
+            <p>Visit us in-store or shop online to take advantage of these crazy deals. Remember, at Crazy Joe's Tech Shack, we make technology affordable and accessible to everyone. Come see what's in store for you!</p>
+        </article>
+        <aside id="sidebar2">
+            <h2>BIG SALE!</h2>
+            <p>The best sale of the year is going on right now! Save 30% off list prices!</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy;2024 Crazy Joe</p>
+    </footer>
+</body>
+</html>

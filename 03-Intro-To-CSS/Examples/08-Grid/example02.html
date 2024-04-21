@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid Repeat</title>
+        <style>
+                div {
+                    background-color: orange;
+                }
+
+                main {
+                    display: grid;
+                    grid-template: repeat(2, 75px) / repeat(2, 1fr) 2fr;
+                    grid-row-gap: 10px;
+                    grid-column-gap: 20px;
+                }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div>Row 1 Col 1</div>
+            <div>Row 1 Col 2</div>
+            <div>Row 1 Col 3</div>
+            <div>Row 2 Col 1</div>
+            <div>Row 2 Col 2</div>
+            <div>Row 2 Col 3</div>
+        </main>
+    </body>
+</html>

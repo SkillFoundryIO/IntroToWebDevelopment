@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Justify-Content Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            background-color: black;
+        }
+
+        nav ul li {
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .flexend {
+            justify-content: flex-end;
+        }
+
+        .center {
+            justify-content: center;
+        }
+
+        .spacebetween {
+            justify-content: space-between;
+        }
+
+        .spacearound {
+            justify-content: space-around;
+        }
+
+        .spaceevenly {
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <p>Flex Start (default)</p>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>   
+    <p>Flex End</p>
+    <nav>
+        <ul class="flexend">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>  
+    <p>Center</p>
+    <nav>
+        <ul class="center">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>
+    <p>Space Between</p>
+    <nav>
+        <ul class="spacebetween">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>
+    <p>Space Around</p>
+    <nav>
+        <ul class="spacearound">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>
+    <p>Space Evenly</p>
+    <nav>
+        <ul class="spaceevenly">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

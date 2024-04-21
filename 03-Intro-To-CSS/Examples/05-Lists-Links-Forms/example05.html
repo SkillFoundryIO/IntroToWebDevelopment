@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>
+    <title>Styling Tables</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-bottom: 1em;
+        }
+
+        body {
+            padding: 2em;
+        }
+
+        table {
+            table-layout: fixed;
+            width: 100%;
+            border-collapse: collapse;
+            border: 3px solid black;
+        }
+
+        table caption {
+            font-size: x-large;
+            padding: 20px;
+            font-style: italic;
+            color: orange;
+            text-align: right;
+            caption-side: bottom;
+        }
+
+        thead th {
+            text-align: left;
+            font-size: larger;
+        }
+
+        thead th:nth-child(1) {
+            width: 30%;
+        }
+
+        thead th:nth-child(2) {
+            width: 10%;
+        }
+
+        thead th:nth-child(3) {
+            width: 10%;
+        }
+
+        thead th:nth-child(4) {
+            width: 30%;
+        }
+
+        th, td {
+            padding: 20px;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        thead tr {
+            background-color: black;
+            color: white;
+        }
+
+        tfoot tr {
+            background-color: black;
+            color: white; 
+        }
+
+        tfoot td {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Styled Table</h1>
+    <table>
+        <caption>Movies by Revenue</caption>
+        <thead>
+            <tr>
+                <th>Movie Title</th>
+                <th>Release Year</th>
+                <th>Total Revenue<br>(billions)</th>
+                <th>Director</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Avatar</td>
+                <td>2009</td>
+                <td>$2.847</td>
+                <td>James Cameron</td>
+            </tr>
+            <tr>
+                <td>Avengers: Endgame</td>
+                <td>2019</td>
+                <td>$2.798</td>
+                <td>Anthony and Joe Russo</td>
+            </tr>
+            <tr>
+                <td>Titanic</td>
+                <td>1997</td>
+                <td>$2.202</td>
+                <td>James Cameron</td>
+            </tr>
+            <tr>
+                <td>Star Wars: The Force Awakens</td>
+                <td>2015</td>
+                <td>$2.068</td>
+                <td>J.J. Abrams</td>
+            </tr>
+            <tr>
+                <td>Avengers: Infinity War</td>
+                <td>2018</td>
+                <td>$2.048</td>
+                <td>Anthony and Joe Russo</td>
+            </tr>
+            <tr>
+                <td>Jurassic World</td>
+                <td>2015</td>
+                <td>$1.672</td>
+                <td>Colin Trevorrow</td>
+            </tr>
+            <tr>
+                <td>The Lion King</td>
+                <td>2019</td>
+                <td>$1.657</td>
+                <td>Jon Favreau</td>
+            </tr>
+            <tr>
+                <td>The Avengers</td>
+                <td>2012</td>
+                <td>$1.519</td>
+                <td>Joss Whedon</td>
+            </tr>
+            <tr>
+                <td>Furious 7</td>
+                <td>2015</td>
+                <td>$1.516</td>
+                <td>James Wan</td>
+            </tr>
+            <tr>
+                <td>Frozen II</td>
+                <td>2019</td>
+                <td>$1.450</td>
+                <td>Chris Buck, Jennifer Lee</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Revenue</td>
+                <td colspan="2">$19.78B</td>
+            </tr>
+        </tfoot>
+    </table> 
+</body>

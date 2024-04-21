@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Margin Collapsing</title>
+    <style>
+        p {
+            border: 1px solid black;
+        }
+
+        .p1 {
+            margin-bottom: 30px;
+        }
+
+        .p2 {
+            margin-top: 50px;
+            margin-bottom: 30px;   
+        }
+
+        .p3 {
+            margin-top: -20px;
+        }
+    </style>
+</head>
+    <body>
+        <p class="p1">Paragraph 1</p>
+        <p class="p2">Paragraph 2</p>
+        <p class="p3">Paragraph 3</p>
+    </body>
+</html>

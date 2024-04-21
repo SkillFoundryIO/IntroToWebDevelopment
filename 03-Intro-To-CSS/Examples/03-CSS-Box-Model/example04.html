@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Float Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, p {
+            margin: 0 0 1em 0;
+        }
+
+        body {
+            margin: 1em;
+        }
+
+        header {
+            border: 1px dotted black;
+            margin-bottom: 1em;
+        }
+
+        header img {
+            float: left;
+            margin-right: 2em;
+            width: 75px;
+            height: 75px;
+        }
+
+        header h1 {
+            margin-bottom: 0.5em;
+        }
+        
+        header p {
+            font-style: italic;
+        }
+        
+        main {
+            clear: left;
+        }
+    </style>
+</head>
+    <body>
+        <header>
+            <img src="img/anvil-small.png" alt="anvil logo">
+            <h1>Web Developer News</h1>
+            <p>Skill up with us!</p>
+        </header>
+        <main>
+            <p>We are a team of web development enthusiasts dedicated to 
+               bringing the latest news, trends, and resources to the web 
+               development community. Our goal is to help developers stay 
+               up to date with the fast-paced world of web technology.
+            </p>
+        </main>
+    </body>
+</html>

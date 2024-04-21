@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+        .box {
+            width: 600px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .centered {
+            background-image: url(img/anvil-small.png);
+            background-size: 200px 200px;
+            background-repeat: no-repeat;    
+            background-position: center;
+        }
+
+        .middle-right {
+            background-position: right;
+            background-size: 200px 200px;
+            background-image: url(img/anvil-small.png);
+            background-repeat: no-repeat;
+        }
+
+        .offset-left-bottom {
+            background-image: url(img/anvil-small.png);
+            background-size: 200px 200px;
+            background-repeat: no-repeat;
+            background-position: left 2em bottom 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Position</h1>
+    </header>   
+    <main>
+        <p>Centered</p>
+        <div class="box centered"></div>
+        <p>Middle right</p>
+        <div class="box middle-right"></div>
+        <p>Offset left bottom... notice it's slightly higher.
+            
+        </p>
+        <div class="box offset-left-bottom"></div>
+    </main>
+</body>
+</html>

@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <title>Cover Letter</title>
     <style>
+        /* reset the spacing */
         * {
             margin: 0;
             padding: 0;
         }
         
+        /* add gradient background */
         html {
             height: 100%; /* take up the whole visible screen */
             background-image: linear-gradient(to bottom right, #4d4746, #979593);
         }
 
+        /* Set better fonts */
         body {
             font-family: Helvetica, Verdana, Arial, sans-serif;         
         }
 
+        /* Give it a background and better margins */
         header {
             background-color: #007bff;
             color: #ffffff;
@@ -27,8 +31,17 @@
             margin-bottom: 1em;
         }
 
+        /* Add a logo but pull the header to the center */
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-right: -50px; /* so the header stays centered */
+            float: left;
+        }
+
+        /* The white background offsets the gradient */
         main {
-            clear: left;
+            clear: left;   /* clear the logo float */
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 1em;
@@ -55,13 +68,6 @@
         }
         li {
             margin-bottom: 1em;
-        }
-
-        .logo {
-            width: 50px;
-            height: 50px;
-            margin-right: -50px; /* so the header stays centered */
-            float: left;
         }
     </style>
 </head>

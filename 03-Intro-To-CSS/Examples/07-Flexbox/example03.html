@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Align-Self and Align Items Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100px;
+            list-style-type: none;
+            background-color: black;
+        }
+
+        nav ul li {
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .home {
+            align-self: flex-start;
+        }
+
+        .support {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="home"><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li class="support"><a href="#">Support</a></li>
+        </ul>
+    </nav>
+    <p>The height is set to 100px.</p>
+</body>
+</html>

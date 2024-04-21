@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Selector Examples</title>
+        <style>
+            /* Element selector */
+            p {
+                color: blue;
+            }
+
+            /* Class selector */
+            .highlight {
+                background-color: yellow;
+            }
+
+            /* ID selector */
+            #unique-element {
+                font-weight: bold;
+            }
+
+            /* Attribute selector */
+            input[type="text"] {
+                border: 2px solid green;
+            }
+
+            /* Pseudo-class selector */
+            a:hover {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <p>This is a paragraph styled with an element selector.</p>
+        <p class="highlight">This paragraph is highlighted with a class selector.</p>
+        <div id="unique-element">This div is styled with an ID selector.</div>
+        <form>
+            <input type="text" placeholder="Styled with attribute selector">
+        </form>
+        <a href="#">Hover over me! (Pseudo-class selector)</a>
+    </body>
+</html>

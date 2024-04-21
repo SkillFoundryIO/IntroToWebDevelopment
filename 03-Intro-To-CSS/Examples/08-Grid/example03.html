@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid Auto* Properties</title>
+        <style>
+                .autofit {
+                    display: grid;
+                    grid-template: repeat(2, 75px) / repeat(auto-fit, minmax(100px, 1fr));
+                    grid-row-gap: 10px;
+                    grid-column-gap: 20px;
+                    margin-bottom: 30px;
+                }
+
+                .autofill {
+                    display: grid;
+                    grid-template: repeat(2, 75px) / repeat(auto-fill, minmax(100px, 1fr));
+                    grid-row-gap: 10px;
+                    grid-column-gap: 20px;
+                }
+
+                .autofit div {
+                    background-color: orange;
+                }
+
+                .autofill div {
+                    background-color: orange;
+                }
+        </style>
+    </head>
+    <body>
+        <main>
+            <p>auto-fill example</p>
+            <div class="autofill">
+                <div>Row 1 Col 1</div>
+                <div>Row 1 Col 2</div>
+                <div>Row 1 Col 3</div>
+                <div>Row 2 Col 1</div>
+                <div>Row 2 Col 2</div>
+                <div>Row 2 Col 3</div>
+            </div>
+            <p>auto-fit example</p>
+            <div class="autofit">
+                <div>Row 1 Col 1</div>
+                <div>Row 1 Col 2</div>
+                <div>Row 1 Col 3</div>
+                <div>Row 2 Col 1</div>
+                <div>Row 2 Col 2</div>
+                <div>Row 2 Col 3</div>          
+            </div>
+        </main>
+    </body>
+</html>
