@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/darkly/bootstrap.min.css" rel="stylesheet">
+        <link href="css/todo.css" rel="stylesheet">		
+        <script src="js/todo.js"></script>
+        <title>Todo App</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+              <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="dicepoker.html">Dice Poker</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="guessgame.html">Guessing Game</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Todo List
+                            <span class="visually-hidden">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Me</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <main class="row pb-3">
+              <header class="row mb-3">
+                <div class="col text-center">
+                  <h1 class="my-4">The Obligatory Todo App</h1>
+                </div>
+              </header>
+              <div class="row mb-3">
+                <section id="sectionAddTask" class="col-md-6 px-3">
+                  <form id="addTask">
+                    <div class="form-group mb-3">
+                      <label for="taskTitle">Task Title</label>
+                      <input type="text" id="taskTitle" name="taskTitle" class="form-control">
+                    </div>
+                    <div class="form-group mb-3">
+                      <label for="taskSubtitle">Task Subtitle</label>
+                      <input type="text" id="taskSubtitle" name="taskSubtitle" class="form-control">
+                    </div>
+                    <div class="form-group mb-3">
+                      <label for="taskDescription">Description</label>
+                      <textarea id="taskDescription" name="taskDescription" class="form-control"></textarea>
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-success">Add Todo</button>
+                    </div>
+                  </form>
+                </section>
+                <section id="sectionTodoList" class="col-md-6">
+
+                </section>
+              </div>
+            </main>
+        </div>
+    </body>
+</html>

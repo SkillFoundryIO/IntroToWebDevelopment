@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/darkly/bootstrap.min.css" rel="stylesheet">
+        <link href="css/guessgame.css" rel="stylesheet">		
+		<script src="js/guessgame.js"></script>
+        <title>Dice Poker</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+                    <div class="container-fluid">
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarColor01">
+							<ul class="navbar-nav me-auto ms-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="dicepoker.html">Dice Poker</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Guessing Game
+									<span class="visually-hidden">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="todo.html">Todo List</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">Contact Me</a>
+							</li>
+							</ul>
+						</div>
+                    </div>
+                </nav>
+            </div>
+            <header class="row">
+              <div class="col text-center">
+                <h1 class="my-4">Welcome to the Guessing Game!</h1>
+                <p>I'm thinking of a number between 1 and <span id="maxNum">20</span>... can you guess it?</p>
+              </div>                
+            </header>
+            <section class="row">
+				<div id="guessArea" class="pb-4">
+					<div class="col-md-2 offset-md-5">
+					  <form id="guessForm">
+						<div class="row mb-4">
+						  <div class="col-sm-6">
+							<input type="number" class="form-control" id="guess" name="guess">
+						  </div>
+						  <div class="col-sm-6">
+							<p id="guessResponse">lower</p>
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-sm-8">
+							<button id="btnGuess" type="sumbit" class="btn btn-primary" style="width:100%">Guess</button>
+						  </div>                      
+						</div>
+					  </form>
+					</div>
+				</div>  
+			</section>
+			<section class="row">
+				<div id="scoreboardArea" class="p-4 col-md-6">
+					<h3>Scoreboard</h3>
+					<div class="row">
+						<div class="col-md-4">
+							<p class="scoreboard-label">Wins</p>
+							<p id="wins" class="scoreboard-text" readonly>0</p>
+						</div>
+						<div class="col-md-4">
+							<p class="scoreboard-label">Losses</p>
+							<p id="losses" class="scoreboard-text" readonly>0</p>
+						</div>
+						<div class="col-md-4">
+							<p class="scoreboard-label">Guesses</p>
+							<p id="remainingGuesses" class="scoreboard-text" readonly>5</p>
+						</div>
+					</div>
+					<div class="text-center">
+						<button id="btnReset" type="button" class="btn btn-warning">Reset Scoreboard</button>
+					</div>
+				</div>
+				<div id="settingsArea" class="p-4 col-md-6">
+					<h3>Settings</h3>
+					<form id="settingsForm">
+						<div class="form-group mb-3">
+							<label for="maxGuesses"># Guesses</label>
+							<input id="maxGuesses" name="maxGuesses" min="1" type="number" class="form-control" value="5">
+						</div>
+						<div class="form-group mb-3">
+							<label for="maxNumber">Max Number</label>
+							<input id="maxNumber" name="maxNumber" min="1" type="number" class="form-control" value="20">
+						</div>
+						<div class="text-center">
+							<button id="btnUpdate" type="submit" class="btn btn-success">Update Settings</button>
+						</div>
+					</form>
+				</div>
+			</section>
+        </div>
+    </body>
+</html>

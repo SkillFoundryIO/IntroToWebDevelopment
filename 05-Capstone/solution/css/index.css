@@ -1,0 +1,17 @@
+/* index.html */
+#skillsList div {
+    margin: 10px 40px 20px 0;
+    font-size: 20px;
+    background-color: orange;
+    font-weight: bold;
+    border-radius: 6%;
+    padding: 10px 20px;
+}
+
+section {
+    border-bottom: 2px solid white;
+}
+
+.indented-list {
+    padding-left: 40px; /* Example of more indentation */
+}

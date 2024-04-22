@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/darkly/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .error-message {
+      color: red;
+      display: none;
+    }
+  </style>
+  <script src="js/contact.js"></script>
+  <title>Contact Me</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="row">
+      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="guessgame.html">Dice Poker</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="guessgame.html">Guessing Game
+                  <span class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="todo.html">Todo List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="row">
+      <div class="mt-5 col-md-6 offset-md-3">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+          <div class="form-group mb-3">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name">
+            <div class="error-message" id="nameError">Please enter your name.</div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email">
+            <div class="error-message" id="emailError">Please enter a valid email address.</div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+            <div class="error-message" id="messageError">Please enter a message.</div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="mt-4">
+          <p>Note: This contact form is not currently wired up. Submissions will not be processed.</p>
+        </div>
+        <div class="mt-4">
+          <h4>Connect with me on social media:</h4>
+          <div class="d-flex justify-content-around p-3">
+            <a class="mr-3" href="#" target="_blank"><img src="img/linkedin-logo.png" alt="Linked In" width="32" height="32"></a>
+            <a class="mr-3" href="#" target="_blank"><img src="img/instagram-logo.png" alt="Instagram" width="32" height="32"></a>
+            <a class="mr-3" href="#" target="_blank"><img src="img/youtube-logo.png" alt="YouTube" width="32" height="32"></a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

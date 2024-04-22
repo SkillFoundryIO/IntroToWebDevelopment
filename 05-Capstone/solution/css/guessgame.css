@@ -1,0 +1,37 @@
+section {
+    border-bottom: 2px solid white;
+}
+
+#scoreboardArea {
+    border: 2px solid white;
+}
+
+#scoreboardArea h3 {
+    text-align: center;
+}
+
+.scoreboard-label {
+    font-weight: bold;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.scoreboard-text {
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    border: 1px solid white;
+}
+
+#settingsArea {
+    border: 2px solid white;
+}
+
+#settingsArea h3 {
+    text-align: center;
+}
+
+#guessResponse {
+    display: none;
+    font-weight: bold;
+}

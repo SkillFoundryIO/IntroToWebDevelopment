@@ -1,0 +1,59 @@
+input[type="checkbox"] {
+    scale: 1.7;
+}
+
+.diceResult {
+    font-size: 1.7em;
+    border: 1px solid white;
+    text-align: center;
+}
+
+#commands button {
+    width: 100%;
+}
+
+.rerollMessage {
+    font-size: 1.5em;
+}
+
+#scoreboardArea, main {
+    border: 2px solid white;
+}
+
+#scoreboardArea h3 {
+    text-align: center;
+}
+
+.scoreboard-label {
+    font-weight: bold;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.scoreboard-text {
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    border: 1px solid white;
+}
+
+#scoringArea {
+    border: 2px solid white;
+}
+
+#scoringArea h3 {
+    text-align: center;
+}
+
+#scoringArea ul {
+    list-style-type: none;
+}
+
+#scoringArea ul li {
+    font-size: 1.2em;
+}
+
+#resetArea {
+    border: 2px solid white;
+    padding: 2em;
+}

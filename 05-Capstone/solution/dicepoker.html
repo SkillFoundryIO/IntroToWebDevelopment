@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/darkly/bootstrap.min.css" rel="stylesheet">
+  <link href="css/dicepoker.css" rel="stylesheet">
+  <script src="js/dicepoker.js"></script>
+  <title>Dice Poker</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Dice Poker
+                  <span class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="guessgame.html">Guessing Game</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="todo.html">Todo List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <main class="row pb-3">
+      <header class="row mb-3">
+        <div class="col text-center">
+          <h1 class="my-4">Welcome to the Dice Poker!</h1>
+        </div>
+      </header>
+      <section class="row mb-3">
+        <div class="col-md-2 text-center">
+          <h3>Rolls</h3>
+        </div>
+        <div class="col-md-2 text-center">
+          <p id="d1" class="diceResult" readonly>0</p>
+          <input type="checkbox" id="r1" name="r1">
+        </div>
+        <div class="col-md-2 text-center">
+          <p id="d2" class="diceResult" readonly>0</p>
+          <input type="checkbox" id="r2" name="r2">
+        </div>
+        <div class="col-md-2 text-center">
+          <p id="d3" class="diceResult" readonly>0</p>
+          <input type="checkbox" id="r3" name="r3">
+        </div>
+        <div class="col-md-2 text-center">
+          <p id="d4" class="diceResult" readonly>0</p>
+          <input type="checkbox" id="r4" name="r4">
+        </div>
+        <div class="col-md-2 text-center">
+          <p id="d5" class="diceResult" readonly>0</p>
+          <input type="checkbox" id="r5" name="r5">
+        </div>
+      </section>
+      <section id="commands" class="row">
+        <div class="col-md-3 offset-md-5">
+          <p class="rerollMessage">Rerolls Remaining: <span id="rerollsRemaining">2</span></p>
+        </div>
+        <div class="col-md-2">
+          <button id="btnStop" type="button" class="btn btn-danger">Stop</button>
+        </div>
+        <div class="col-md-2">
+          <button id="btnReroll" type="button" class="btn btn-success">Reroll</button>
+        </div>
+      </section>
+    </main>
+    <section class="row">
+      <div id="scoreboardArea" class="p-4 col-md-6">
+        <h3>Scoreboard</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="scoreboard-label">Current Score</p>
+            <p id="currentScore" class="scoreboard-text" readonly>0</p>
+          </div>
+          <div class="col-md-6">
+            <p class="scoreboard-label">High Score</p>
+            <p id="highScore" class="scoreboard-text" readonly>0</p>
+          </div>
+        </div>
+      </div>
+      <div id="scoringArea" class="p-4 col-md-6">
+        <h3>Scoring</h3>
+        <ul>
+          <li><strong>Chance</strong>: Sum of dice</li>
+          <li><strong>3 of a Kind</strong>: 20 + sum of dice.</li>
+          <li><strong>Full House</strong>: 25 + sum of dice.</li>
+          <li><strong>4 of a Kind</strong>: 30 + sum of dice.</li>
+          <li><strong>Straight</strong>: 35 + sum of dice.</li>
+          <li><strong>5 of a Kind</strong>: 40 + sum of dice.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="row">
+      <div id="resetArea">
+        <p>To clear scores and start fresh, click this button!</p>
+        <button id="btnReset" type="button" class="btn btn-warning">Reset Game</button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
